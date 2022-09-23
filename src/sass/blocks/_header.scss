@@ -1,0 +1,87 @@
+.topbar {
+    height: 40px;
+    background-color: $color_footer;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__wrraper {
+        padding: 9px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__workdays {
+        width: 430px;
+        padding-left: 10px;
+
+        &_text {
+            color: $color_main_white;
+            list-style-type: none;
+            font-size: 11px;
+            line-height: 14px;
+            font-weight: 700;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            margin-bottom: 0;
+
+            a {
+                color: $color_main_white;
+                text-decoration: none;
+                @include link_white_text;
+            }
+        }
+    }
+
+    &__links {
+        width: 470px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_diffrent {
+            width: 325px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            a {
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 14px;
+                color: $color_main_white;
+                margin-left: 30px;
+                text-decoration: none;
+                @include link_white_text;
+            }
+        }
+
+        &_social {
+            width: 110px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+                &:hover {
+                    width: 20px;
+                    height: 20px;
+                    background: #656A25;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+    }
+}

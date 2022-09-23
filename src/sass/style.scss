@@ -1,0 +1,19 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixin';
+
+.container {
+    max-width: 1790px;
+    margin: auto;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@import 'blocks/header';
+@import 'blocks/media'
