@@ -1,0 +1,136 @@
+.nav {
+    height: 100px;
+}
+
+.menu {
+    position: relative;
+    padding: 35px 0 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__main {
+        width: 470px;
+
+        &_button {
+            background: #656A25;
+            border: none;
+            width: 50px;
+            height: 30px;
+            margin-left: 5px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+
+        ul {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            li {
+                margin: auto 0;
+            }
+        }
+
+        &_link {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 15px;
+            color: $color_main_text;
+
+            &:hover {
+                color: #656A25;
+            }
+        }
+
+    }
+
+    &__cabinet {
+        width: 480px;
+        position: relative;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        &_item {
+            a {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 15px;
+                color: $color_main_text;
+
+                &:hover {
+                    color: #656A25;
+                }
+            }
+
+        }
+
+        &_divider {
+            border: 1px solid #DED7D0;
+            transform: rotate(360deg);
+            margin-right: 20px;
+        }
+
+        &_item-favourite {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: -3px;
+                left: 78px;
+                background: url('../../icons/header-info/cabinet/favourite.svg') center (center / cover) no-repeat
+            }
+        }
+
+        &_item-buying {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: 1px;
+                left: 259px;
+                background: url('../../icons/header-info/cabinet/buy.svg') center (center / cover) no-repeat
+            }
+
+            &-added {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 36px;
+                    top: -29px;
+                    left: 259px;
+                    background: url('../../icons/header-info/cabinet/added.svg') center (center / cover) no-repeat
+                }
+            }
+
+        }
+
+        &_item-login {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: 3px;
+                right: 53px;
+                background: url('../../icons/header-info/cabinet/log-in.svg') center (center / cover) no-repeat
+            }
+        }
+    }
+}
+
+.logo {
+    padding-right: 25px;
+}
